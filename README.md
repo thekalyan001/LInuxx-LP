@@ -1,5 +1,83 @@
 # Linuxx-LP
+<hr>
 
-------------------
+### <li> D1
+    cal- calender
+    cal 2023- 2023 calener
+    echo- for ptinting
 
-D1-
+    date --date="2 year ago"
+    touch-empty file create
+    cat- create file for writing 
+
+
+    history 8  =>check previous 8 executed command
+    history -c =>clear history
+
+    perform arthematic oprtation using expr and bc command-
+    + expr 10 + 12
+    - expr 12 - 10
+    * expr 10 \* 10
+    / expr 100 / 10
+
+### <li> D2
+ 
+    create 2 text file and 2 directory
+    touch a.txt 
+    touch b.txt
+    mkdir AB
+    mkdir FG
+
+    rm a.txt 
+    rmdir myDirectory
+
+    bash ui.sh //goto directory  
+    ls  //see list
+    cd AB //goto AB directory
+    cd .. //come back from directory
+  
+  
+    Print and do sum of two number using shell script nano
+    nano file_name.sh
+      ->write 
+      echo "hello"
+      expr 10 + 19
+
+    bash file_name.sh
+    output->  
+    hello  
+    29
+
+    variable in shell:- 
+    #! /bin/bash
+    a="Welcome all"
+    b=12
+
+    unsetting a variable (i want to clear the value given to the variable)
+    a="Welcome all"
+    unset a 
+    echo a ->will print nothing  
+  
+  
+### <li> D3
+<!-- 
+
+### <li> D4
+### <li> D5
+### <li> D6
+### <li> D7
+### <li> D8
+### <li> D9
+### <li> D10
+### <li> D11
+### <li> D12
+### <li> D13
+### <li> D14
+### <li> D15
+### <li> D16
+### <li> D17
+### <li> D18
+### <li> D19
+### <li> D20
+
+-->
