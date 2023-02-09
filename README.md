@@ -59,7 +59,33 @@
     echo a ->will print nothing  
   
   
-### <li> D3
+### <li> D3 26-01
+    positional parameter- function jaise
+
+    nano filename.sh 
+
+    echo "name $1"
+    echo "age $2"
+    echo "fullname $3"
+
+    bash filename.sh
+    name
+    age 
+    fullname 
+
+
+    chmod +x filename.sh   (for permission)
+    ./filename.sh kalyan 22 mishra    (error de raha h filhaal)
+    or 
+    bash filename.sh kalyan 22 mishra
+
+    name kalyan 
+    age mishra
+    fullname 22
+
+### <li> D4 27-01
+
+
 <!-- 
 
 ### <li> D4
