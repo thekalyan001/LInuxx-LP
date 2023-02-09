@@ -1,7 +1,7 @@
 # Linuxx-LP
 <hr>
 
-### <li> D1
+### <li>🟢 D1
     cal- calender
     cal 2023- 2023 calener
     echo- for ptinting
@@ -20,7 +20,7 @@
     * expr 10 \* 10
     / expr 100 / 10
 
-### <li> D2
+### <li>🟢 D2
  
     create 2 text file and 2 directory
     touch a.txt 
@@ -59,7 +59,7 @@
     echo a ->will print nothing  
   
   
-### <li> D3 26-01
+### <li>🟢 D3 26-01
     positional parameter- function jaise
 
     nano filename.sh 
@@ -83,7 +83,7 @@
     age mishra
     fullname 22
 
-### <li> D4 27-01
+### <li>🟢 D4 27-01
 
 
 <!-- 
