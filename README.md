@@ -59,7 +59,7 @@
     echo a ->will print nothing  
   
   
-### <li>🟢 D3 26-01
+### <li>🟢 D3 
     positional parameter- function jaise
 
     nano filename.sh 
@@ -83,9 +83,42 @@
     age mishra
     fullname 22
 
-### <li>🟢 D4 27-01
+### <li>🟢 D4 
+-------------------------27-01-2023
+    -eq  check for equality
+    -ne inequality
+    -lt less than
+    -le less than or equal 
+    -gt greater than 
+    -ge greater than or equal 
+
+    checking for equality ---
+    nano fname.sh
+
+    #! /bin/bash
+    a=10
+    b=20
+    if [ $a == $b ]
+    then 
+        echo "a is equal to b"
+    else
+        echo "a is not equal to b"
+    fi 
+
+    bash fname.sh 
+    output- a is not equal to b
 
 
+    --------------sum of number using variable-
+    #! /bin/bash
+    a=10
+    b=12
+
+    expr $a + $b 
+    expr $a \* $b
+    expr $a / $b 
+
+### <li>🟢 D5
 <!-- 
 
 ### <li> D4
