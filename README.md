@@ -119,6 +119,62 @@
     expr $a / $b 
 
 ### <li>🟢 D5
+
+    -------------sum of number using function 
+    #! /bin/bash
+
+    a="$1"
+    b="$2"
+
+    expr $a + $b 
+    expr $a \* $b
+    expr $a / $b 
+
+    chmod +x fname.sh
+    bash fname.sh 10 12
+
+    ------------------------less than, greater than, less or greater, etc-
+
+    #! /bin/bash
+    a=10
+    b=20
+
+    if [ $a -lt $b ]
+    then 
+        echo "a is less than b"
+    else
+        echo "a is greater than b"
+    fi 
+
+    /*Multiple if statement */
+
+    --------------------CASE SWITCH-------------
+
+    #! /bin/bash
+    vehicle=$1
+    case $vehicle in
+    "car")
+    echo "rent of $vehicle is 100 dallar";;
+
+    "van")
+    echo "rent of $vehicle is 80 dallar";;
+
+    "bibycle")
+    echo "rent of $vehicle is 5 dallar";;
+
+    "truck")
+    echo "rent of $vehicle is 160 dallar";;
+
+
+    *) 
+    echo "unknown vehicle";;
+    esac
+
+
+    bash fanme.sh car  can k jagah pr van krke dekho
+    
+
+### <li>🟢 D6
 <!-- 
 
 ### <li> D4
