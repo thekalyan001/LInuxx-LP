@@ -84,7 +84,6 @@
     fullname 22
 
 ### <li>🟢 D4 
--------------------------27-01-2023
     -eq  check for equality
     -ne inequality
     -lt less than
