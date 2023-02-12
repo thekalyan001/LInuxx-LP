@@ -175,6 +175,27 @@
     
 
 ### <li>🟢 D6
+
+    #! /bin/bash
+    echo "Enter a number"
+    num=$1
+    case $num in 
+    [0-9])
+        echo "single digit";;
+    [1-9][0-9])
+        echo "double digit";;
+    [1-9][0-9][0-9])
+        echo "three digit";;
+    *)
+    echo "barka number lag rha h";;
+    esac
+
+
+
+    bash fanme.sh 12
+    //https://unix.stackexchange.com/questions/179218/how-to-enter-the-condition-to-check-0-or-more-than-0-in-case
+### <li>🟢 D7
+
 <!-- 
 
 ### <li> D4
