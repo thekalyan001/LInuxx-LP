@@ -193,26 +193,57 @@
 
     bash fanme.sh 12
     //https://unix.stackexchange.com/questions/179218/how-to-enter-the-condition-to-check-0-or-more-than-0-in-case
+
 ### <li>🟢 D7
 
-<!-- 
+    #! /bin/bash
+    echo "Enter a number"
+    num=$1
+    case $num in 
+    [0-9].[0-9])
+        echo "decimal";;
+    *)
+    echo "invalid";;
+    esac
 
-### <li> D4
-### <li> D5
-### <li> D6
-### <li> D7
-### <li> D8
-### <li> D9
-### <li> D10
-### <li> D11
-### <li> D12
-### <li> D13
-### <li> D14
-### <li> D15
-### <li> D16
-### <li> D17
-### <li> D18
-### <li> D19
-### <li> D20
+    bash fanme.sh 1.2
+
+    --------------------------
+    for loop in shell------
+
+    #! /bin/bash
+    for i in 1 2 3 4 5
+    do
+        echo "hello $i"
+    done
+
+    bash fname.sh 
+    print ->5 times hello1..till 5
+
+
+
+    #! /bin/bash
+    for i in {1..20}
+    do
+        echo "hello $i"
+    done
+
+    bash fname.sh 
+    print ->5 times hello1..till 20
+    
+### <li>🟢 D8
+<!-- 
+### <li>🟢 D9
+### <li>🟢 D10
+### <li>🟢 D11
+### <li>🟢 D12
+### <li>🟢 D13
+### <li>🟢 D14
+### <li>🟢 D15
+### <li>🟢 D16
+### <li>🟢 D17
+### <li>🟢 D18
+### <li>🟢 D19
+### <li>🟢 D20
 
 -->
