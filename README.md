@@ -232,8 +232,82 @@
     print ->5 times hello1..till 20
     
 ### <li>🟢 D8
-<!-- 
+
+    use for loop increment the value by 5
+    #! /bin/bash
+    for i in {1..20..5}
+    do
+        echo "hello $i"
+    done
+
+
+
+    decrement the value by 4
+    use for loop increment the value by 5
+    #! /bin/bash
+    for i in {20..1..4}
+    do
+        echo "hello $i"
+    done
+
+
+
+    simple for loop
+
+    #! /bin/bash
+    for((i=0;i<=7;i++))
+    do
+        echo "$i"
+    done
+    
+    -------------------factorial-----------------------
+
+    #! /bin/bash
+    ans=1
+    for((i-=1;i<=5;i++))
+    {
+        ans= $((ans * i))
+    }
+    echo "$ans"
+
+    120
+
+    ------while loop------- (-le less then)
+
+    #! /bin/bash
+    x=1
+    while [ $x -le 5 ]
+    do
+        echo "welcome $x times"
+    x=$(($x+1))
+    done
+
+
+
+    -gt  (greater then)
+    #! /bin/bash
+    x=5
+    while [ $x -ge 5 ]
+    do
+        echo "welcome $x times"
+    x=$(($x-1))
+    done
+
+
+
+    -ge  (greater then equal)
+
+    #! /bin/bash
+    x=5
+    while [ $x -ge 5 ]
+    do
+        echo "welcome $x times"
+    x=$(($x-1))
+    done
+
 ### <li>🟢 D9
+
+<!-- 
 ### <li>🟢 D10
 ### <li>🟢 D11
 ### <li>🟢 D12
