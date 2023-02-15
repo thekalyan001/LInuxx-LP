@@ -293,7 +293,7 @@
     x=$(($x-1))
     done
 
-
+### <li>🟢 D9
 
     -ge  (greater then equal)
 
@@ -305,7 +305,30 @@
     x=$(($x-1))
     done
 
-### <li>🟢 D9
+    --------------------take two numer and multiply
+
+    nano file.sh
+
+    #! /bin/bash
+    a=$1
+    b=$2
+    mul=$(($a * $b))
+    echo $mul
+
+    or 
+    expr $a \* $b 
+
+    chmod +x file.sh
+    bash file.sh 3 4
+
+    --------------------new line print 
+    echo -e "hwllo \n world"
+    hello
+    world
+
+    echo "hwllo \n world"
+    hello \n world
+
 
 <!-- 
 ### <li>🟢 D10
