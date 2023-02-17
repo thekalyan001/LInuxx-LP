@@ -329,6 +329,48 @@
     echo "hwllo \n world"
     hello \n world
 
+### <li>🟢 D10
+    --------------------(sleep system call )method count decrement by 1 
+    #! /bin/bash
+    count=5
+    while (( count>0 ))
+    do 
+    echo -e "$count\n"
+    sleep 1
+    (( count-- ))
+    done
+
+    output->after 1 1 second print from  5 to 1
+
+
+    ---------compatiblity bracket only with operator-----
+
+    #! /bin/bash
+    echo -e "Please enter age: \n"
+    read age
+    if [ "$age" -gt 18 ] && [ "$age" -lt]
+    then
+    echo "valid age"
+    else
+    echo "invalid age"
+    fi
+
+
+
+
+    a=20
+    b=100
+    if (( $a < $b ))
+        then
+            echo "a is less than b"
+        else
+            echo "b is not less then a"
+    fi
+    ------------&& within comment-----------
+
+    use -a to add && operator in single comment
+    range=10
+    if [$range -gt 20 -a $range -lt 30]
 
 <!-- 
 ### <li>🟢 D10
