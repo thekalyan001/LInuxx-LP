@@ -371,9 +371,77 @@
     use -a to add && operator in single comment
     range=10
     if [$range -gt 20 -a $range -lt 30]
+    
+    ### <li>🟢 D10
+
+    ------------------array---------------------------
+
+    #! /bin/bash
+    name[0]="this"
+    name[1]="name"
+    name[2]="simple"
+    echo "output: ${name[0]}"
+
+
+    bash ab.sh
+    this
+
+
+    print all element
+    #! /bin/bash
+    name[0]="this"
+    name[1]="name"
+    name[2]="simple"
+    echo "output: ${name[@]}"
+
+    bash ab.sh
+    this name simple
+
+
+    u=([1..9])
+    echo "${u[@]}"
+
+    output->1 2 3 4 5 6 7 8 9 10
+
+
+    u=({a..z})
+    output-> a se z tak
+
+
+    u=({a..z..Z})
+
+
+    #! /bin/bash
+    arr= ( "hello" 'thi' 34 34.3)
+    echo "${arr[@]}"
+
+
+    --------concatename the array-------------
+    a=( 1 2 3 4 5 )
+    b=( 3 4 5  6 )
+    x=("${a[@]}" "${b[@]}")
+    echo "${x[@]}"
+
+    output-1 2 3 4 5 3 4 5  6
+
+
+    print length of array 
+    echo "${#x[@]}"
+
+    print index of array
+    echo "${!x[@]}"
+
+
+    #! /bin/bash
+    arr=(1 2 3 4 5 6 7 8)
+    echo "Before addition of ele: ${arr[@]}"
+    echo "Length is: ${#arr[@]}"
+    arr [3]=23
+    echo "After modefy at index 3: ${arr[@]}"
+    arr[${#arr[@]}]=34  
+    echo "After addition of ele: ${arr[@]}"
 
 <!-- 
-### <li>🟢 D10
 ### <li>🟢 D11
 ### <li>🟢 D12
 ### <li>🟢 D13
