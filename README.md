@@ -441,9 +441,72 @@
     arr[${#arr[@]}]=34  
     echo "After addition of ele: ${arr[@]}"
 
-<!-- 
 ### <li>🟢 D12
+    
+    print array ele using while------------------------
+    #! /bin/bash
+    arr=( 1 3 2 5 3 6 )
+
+    1=0
+    echo "size is: ${#arr[@]}"
+    while [ $i -lt ${#arr[@]} ]
+
+    do
+    echo ${arr[$i]}
+    i=$(($i+1) )
+    done
+    ---------------------------------------------
+
+    Q.wap in shell to sort the element in an array
+
+    array=(5 3 8 1 4 6 9 7 2)
+    # Sort the array
+    sorted_array=($(echo "${array[@]}" | tr ' ' '\n' | sort -n))
+
+    # Print the sorted array
+    echo "Sorted Array: ${sorted_array[@]}"
+
+
+    Q.wap in shell to create two files with cat and concatenate the content into 3rd file
+    touch a.txt b.txt c.txt
+    cat >>a.txt  =>This is a.txt file
+
+    cp a.txt b.txt  //copy from file a.txt to b.txt
+    cat b.txt  =>output->This is a.txt
+
+    cat a.txt b.txt>>c.txt
+
+    cat c.txt  //printing c.txt file
+    output->
+    This is a.txt file
+    This is a.txt file
+
+    Q.wap in shell to print the element of an array in reverse order
+    =>nano file.sh
+
+    #!/bin/bash
+    array=( 5 3 8 1 4 )
+    size=${#arr[@]}
+
+    ((size--))
+    while (( $size>=0 ))
+    do 
+        echo ${arr[size]}
+        ((size--))
+    done
+
+
+    bash file.sh
+    4
+    1
+    8
+    3
+    5
+
 ### <li>🟢 D13
+
+<!-- 
+
 ### <li>🟢 D14
 ### <li>🟢 D15
 ### <li>🟢 D16
