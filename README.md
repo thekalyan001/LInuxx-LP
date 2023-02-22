@@ -505,9 +505,32 @@
 
 ### <li>🟢 D13
 
-<!-- 
+    ---------------------function----------
+    #! /bin/bash
+    fun()
+    {
+        echo "hello all"
+    }
+    fun
 
+    bash filename.sh
+    -------passing parameter to function---------------------
+    #! /bin/bash
+    fun()
+    {
+        echo "hello all $1  $2"
+        echo "hello you $1  $2"
+    }
+    fun abc bcd
+
+    bash filename.sh
+    output->hello all abc bcd
+            hello you bcd abc
+     
+     
 ### <li>🟢 D14
+
+<!-- 
 ### <li>🟢 D15
 ### <li>🟢 D16
 ### <li>🟢 D17
