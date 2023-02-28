@@ -529,9 +529,74 @@
      
      
 ### <li>🟢 D14
+    #! /bin/bash
+    fun ()
+    echo "$1 $2 $3 $4 $5"
 
-<!-- 
+    val=$1
+    val2=$2
+    val3=$3
+    val4=$4
+    val5=$5
+    echo "Your entered values are:
+    fun $val $val2 $val3 $val4 $val5
+
+    chmox +x filename.sh
+    bash filename.sh 1 2 3 4 5
+
+
+
+    or 
+    #! /bin/bash
+    fun ()
+    echo "$1 $2 $3 $4 $5"
+
+    echo "enter five number"
+    read val val2 val3 val4 val5
+    echo "Your entered values are:
+    fun $val $val2 $val3 $val4 $val5
+
+
+    chmox +x filename.sh
+    bash filename.sh
+
+    output->
+    enter five number:
+    1 2 3 4 5
+
+    -----------------------------------------
+    Q. WAP ti define 3 functions and 2nd one statement should not get printed even on function call
+    ! /bin/bash
+    Fun () {
+    cho "fun1"
+
+    Fun1( ) {
+    echo "fun2"
+    }
+    Fun2( ){
+    echo "fun3"
+    }
+    Fun3 ( ) {
+    echo "fun4"
+    }
+
+    Fun1
+    un2
+    Fun3
+    exit
+    Fun
+
+
+    output->
+    fun2
+    fun3
+    fun4
+
+    fun1 will not get printed
+
+
 ### <li>🟢 D15
+<!-- 
 ### <li>🟢 D16
 ### <li>🟢 D17
 ### <li>🟢 D18
