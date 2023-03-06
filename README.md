@@ -596,8 +596,46 @@
 
 
 ### <li>🟢 D15
-<!-- 
+
+    ----------------perform m=sum and multiply--------------------------
+    sum(){
+        expr 1 + 2
+    }
+    mul(){
+        expr 34 \* 34
+    }
+    sum 
+    mul 
+    -------------------perform bodmas using expr and BC command-----
+    bc command is used for command line calculator. basic mathematic calcualtor
+
+    ! /bin/bash
+    sum( ) {
+    expr $1 + $2
+    echo "$1 + $2" | bc
+    }
+
+    subs( ) {
+    expr $1 - $2
+    }
+
+    mul(){
+    expr $1 \* $2
+    }
+
+    division( ){
+    expr $1 / $2
+    }
+
+    sum 12 23
+    subs 34 23
+    mul 23 23
+    division 24 12
+
 ### <li>🟢 D16
+
+
+<!-- 
 ### <li>🟢 D17
 ### <li>🟢 D18
 ### <li>🟢 D19
