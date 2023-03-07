@@ -633,10 +633,142 @@
     division 24 12
 
 ### <li>🟢 D16
+    -----------------------MID term question--------------------
 
+    Q. WAP in shell and print 3 different date in function
+
+
+    Q. find avg of the number from 1 to 10 using function
+
+    avg_of_num(){
+    i=1
+    while [ $i -le 10 ]
+    do
+    sum=$(($sum + $i))
+    i=$(($1+1))
+    done
+    avg=$(($sum / 10))
+    echo "avg is: $avg"
+    }
+    avg_of num
+
+
+    Q. WAP to find even and odd number using function
+
+    Q. WAP in shell and implement nested function
+
+
+    Q. WAP in shell scripting and perform recursion
+
+
+    ----------------------
+    https://www.cibgp.com/article_10898_98b20a1dbfbdb8f7084003b4a035911d.pdf
+    https://www.researchgate.net/publication/320547139_E-Commerce_Merits_and_Demerits_A_Review_Paper
+    file:///C:/Users/Asus/Downloads/A_REVIEW_PAPER_ON_E_COMMERCE%20(1).pdf
+    https://www.sciencedirect.com/science/article/abs/pii/S0167739X21002211
+    https://www.sciencedirect.com/science/article/pii/S1110016823000741
+
+    mak ed, clos ed, 
+    --------------------------Signal-------------------
+    kill-l => see list of singnal 
+
+
+    echo "pid is $$"
+    while(( count < 10))
+    do
+        sleep 3
+        ((count ++))
+        echo "$count"
+    done
+
+    exit 0 
+
+
+    using for loop
+
+    echo "pid is $$"
+    for(( count=10; count>=1; count-- ))
+    do
+        sleep 3
+        echo "$count"
+    done
+
+    use ctrl+c to break it will call SIG INT 
+
+### <li>🟢 D17
+    -----------------count total parameter passed----------------------------------
+    #!/bin/bash
+    expr $1 + $2
+    echo "total arg are $#"
+
+    bash ab.sh 10 20 30
+    output=> 
+    30
+    total arg are 3
+
+
+    Asychronous signal- user given the signal
+    synchronous signal- system given signal
+    ------------------------Trap signal-------
+    #!/bin/bash
+
+    trap "echo exit1 is detected" 0
+    echo "hello all"
+    trap "echo second exit detected"
+
+    output->
+    hello all
+    echo second exit detected
+
+    on successful execution of program trap priority wala happen
+
+    ---------------------------------
+     touch-create
+     pwd-where located
+     ls ab.txt  =>check if file exist
+
+     trap "rm ab.txt" sigint
+     while ((count<5))
+     do
+        sleep 2
+        echo "$count"
+        ((count++))
+     done
+
+     ----------------------------------------
+
+     #! /bin/bash
+     trap "echo exit command is detected" SIGKILL
+     echo "pid is $$"
+     while((count<9))
+        do
+         sleep 2
+         ((count++))
+         echo "$count"
+    done
+    exit 0
+
+    ------------------delete file when exit command ctrl+c pressed--------------------------
+    create file abb.txt
+    check directoty using pwd
+
+    #! /bin/bash
+    a=/root/abb.txt
+    trap "rm -f $a; exit" 0 2 15
+    echo "pid is $$"
+    while((count<8))
+    do
+        sleep 2
+        ((count++))
+        echo "$count"
+    done
+    exit 0
+
+
+    bash filename.sh
+    ctrl+c  =>file have been deleted check using ls
 
 <!-- 
-### <li>🟢 D17
 ### <li>🟢 D18
 ### <li>🟢 D19
 ### <li>🟢 D20
