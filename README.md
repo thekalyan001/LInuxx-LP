@@ -768,9 +768,42 @@
     bash filename.sh
     ctrl+c  =>file have been deleted check using ls
 
-<!-- 
+
 ### <li>🟢 D18
+    -------------------user enter a file and check file exit or not---------------------------------
+    touch tt.sh
+
+    nano ab.sh
+
+
+    -e  is for filename
+    -d for directory
+    -s check if file is empty
+
+
+    #!/bin/bash
+    echo -e "Enter the name of file: \c"
+    read filename 
+    if [ -e $filename ]
+    then echo "$filename exist"
+    else
+    echo "$filename doesn't exist"
+    fi
+
+
+    explore- https://www.geeksforgeeks.org/shell-scripting-test-command/
+
+    ------------------substring---------------------
+    str="hello students"
+    substr=${str:1:5}
+    echo "$substr"
+
+
+    output->ello
+
 ### <li>🟢 D19
+
+<!-- 
 ### <li>🟢 D20
 ### <li>🟢 D21
 ### <li>🟢 D22
