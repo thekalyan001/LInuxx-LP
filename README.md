@@ -802,9 +802,66 @@
     output->ello
 
 ### <li>🟢 D19
+---------------END TERM paper Swaal leak-------------------
+    Q. WAP to print cube of a number
+
+    #!/bin/bash
+    a=5
+    a=$(( $a * $a * $a ))
+    echo $a
+
+    Q. WAP to generate table of a number
+
+    a=2
+    while((i<=10))
+    do
+        expr $a \* $i 
+        ((i++))
+    done
+
+
+    Q. Count number of argument and if it is >5 print "Too many argument passed"
+
+    #!/bin/bash
+    expr $1 + $2 + $3 + $4 + $5
+    arg=$#
+    if [ $arg -gt 5 ]
+    then
+       echo "Too many arguments"
+    else
+        echo "5 arg are there"
+    fi
+
+    bash ss.sh 1 2 3 4 5 7
+    output->
+    22
+    Too many arguments
+
+
+    Q. check if character is vowel or not
+
+    str="a"
+    if [[ $str == *[AEIOUaeiou]* ]]
+    then
+      echo "Vowel"
+    else
+        echo "consonent"
+    fi
+
+
+    output->a
+
+
+    Q. WAP to print permissions of a directory
+    -> ls -l directory
+
+    mkdir temp
+    ls -l temp
+    output-> total 0
+
+### <li>🟢 D20
 
 <!-- 
-### <li>🟢 D20
 ### <li>🟢 D21
 ### <li>🟢 D22
 -->
