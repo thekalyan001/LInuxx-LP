@@ -860,8 +860,45 @@
     output-> total 0
 
 ### <li>🟢 D20
+    Q. Write a program in shell script and change a default file permission of a directory
+    (file owner should get read, write, execute)
+    (Group member should get execute)
+    (Other should get read only)
+    ans->https://www.pluralsight.com/blog/it-ops/linux-file-permissions
 
-<!-- 
+
+    Q. Write a program in shell and find the area of a circle
+    r=10
+    echo "Area of circle is: ";
+    echo "3.14 * $r * $r" | bc
+
+
+    Q. Write a program in shell and explain the functionality of different command line ($1 $0 etc)
+    echo $0 ->sh 
+    echo $$ PID
+    echo *  saare files name
+
+    Q. Write a program in shell and implement if else and concatenate two string
+    a=$1
+    b=$2
+    if [ $a -ge $b ]
+    then
+    echo "A is greater than b"
+    else
+    echo "A is not greater then b"
+    fi
+
+
+    a="Hello"
+    b="World"
+    c="$a $b"
+    echo $c
+
 ### <li>🟢 D21
+<!-- 
 ### <li>🟢 D22
+### <li>🟢 D23
+### <li>🟢 D24
+### <li>🟢 D25
+
 -->
