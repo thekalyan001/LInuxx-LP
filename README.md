@@ -895,8 +895,111 @@
     echo $c
 
 ### <li>🟢 D21
-<!-- 
+    -------------------debug------------------------
+    #!/bin/bash
+    read -p "enter value " val
+    if [ "$val" -gt "$a" ]
+    then
+    echo "positive number entered"
+    else
+    echo "input not positive"
+    fi
+
+    for debug-> bash -v abb.sh
+
+    bash -n abb.sh  =>it will show all the symentic errors
+
+
+    #!/bin/bash
+    read -p "enter value " val
+    if [ "$val" -gt "$a" ]
+    then
+    ''echo "positive number entered"  #this line has error
+    else
+    echo "input not positive"
+    fi
+
+    for debug-> bash -v abb.sh
+
+
+    bash -n abb.sh
+
+
 ### <li>🟢 D22
+    -------------------locate logical error
+    #!/bin/bash
+    a=4
+    b=8
+    c=$((a+B))
+    echo $c
+
+    bash filename.sh
+    output->4 but it desired is 12 so, cant locate this logical error 
+
+    so use bash -u filename.sh
+    output- B: unbounded variable
+
+    ------------------------Question on all flags-------
+
+    Q. Write a program in shell invoke -n -v -x -u
+
+    #!/bin/bash
+    a=4
+    b=8
+    c=$((a+B))
+    echo $c
+
+
+    bash -n filename.sh
+    no output bcoz -n doesnt locate logical it only give symentic err
+
+
+    bash -u filename.sh
+    B: unbounded variable
+
+
+    bash -v abb.sh
+    output->
+    #!/bin/bash
+    a=4
+    b=8
+    c=$((a+B))
+    echo $c
+    4
+
+
+    bash -x filename.sh
+    output-> only variable wala cheezen displayed (where var is getting expended)
+    a=4
+    b=8
+    c=4
+    echo 4
+    4
+
+    -----------------combning flags---------------------------
+    #!/bin/bash
+    read -p "enter value:" val
+    a=0
+    set -x
+    if [ "$val" -gt "$a" ]
+        echo "positive num entered"
+    else
+        echo "input not positive"
+    fi
+    set +x
+    echo "script ended"
+
+    ---------------------------------------------------
+
+    Q. write a program in shell and invoke multple if
+    #!/bin/bash
+    read -p "enter value:" val 
+    a=0
+    set -x
+    if [ "$val" -gt "$a" ]
+        echo "positive number entered"
+    else if [ "" ]
+<!-- 
 ### <li>🟢 D23
 ### <li>🟢 D24
 ### <li>🟢 D25
