@@ -999,8 +999,41 @@
     if [ "$val" -gt "$a" ]
         echo "positive number entered"
     else if [ "" ]
-<!-- 
+    
+
 ### <li>🟢 D23
+    --------------------------------------ETE-----------------------------------------------------
+    Q. WAP when user entered if it is even or odd
+    #!/bin/bash
+    a=$1
+    if [ $a % 2 == 0 ]
+        then
+            echo "Even"
+    else
+        echo "odd"
+
+    ----------------------
+
+    Q. WAP to implement the function of any 20 command ls-l ls-lsh etc.
+    Q. WAP to implement to check whether user is working in file or Directory.
+
+    Q. WAP to reverse the string "we are working very hard"
+
+    Q. WAP to generate table of 20 and stop the process at 20 * 3
+    #!/bin/bash
+    a=20
+    i=1
+    for((i=1; i<11; i++))
+    do
+        if [ $i == 3 ]
+        then
+          echo "stopped at 3*20"
+          exit
+      else
+        expr $i \* $a 
+      fi 
+    done
+<!-- 
 ### <li>🟢 D24
 ### <li>🟢 D25
 
