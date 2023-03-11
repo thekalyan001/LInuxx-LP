@@ -1033,8 +1033,76 @@
         expr $i \* $a 
       fi 
     done
-<!-- 
-### <li>🟢 D24
-### <li>🟢 D25
 
+### <li>🟢 D24
+    ----------------------
+
+    Q. WAP to trap any signal
+
+    #!/bin/bash
+    trap "echo exit is detected" 0
+    echo "Hello all"
+    exit 0
+
+    ----------------------
+    Q. WAP to display content of a file without cat command
+    Q. what is an IPR (Itellectual propeitery rights)
+    Q. Write a shell which accept two directory as an input and delete only those file from A2 that has identical namees in A1
+    Q. implement the functionliay of and or not
+    Q. WAP to calculate the gross salary of teaching and non teaching staff
+
+
+    Q. WAp in shell and display the frequency of hello in the file
+    touch ab.sh
+    cat>>ab.sh 
+    This is a simple hello file which is hello in the helo world of hello
+    cat<ab.sh 
+    output->aayega
+
+
+
+### <li>🟢 D25
+    ----------------------
+    Q. WAP to find the sum of digits of a number
+    #!/bin/bash
+    a=1234
+    sum=0
+
+    while [ $a -ge 0 ]
+    do
+        sum=$((a % 10 + sum))
+      a=$((a / 10))
+    done
+    echo $sum
+
+    ----------------------
+
+    Q. WAP to print "good morning" and "good afternoon" basis of time
+
+    ------------------------------
+
+    Q. WAP to reverse a number
+
+    num=12345
+    rev=0
+    while [ $num -gt 0 ]
+    do 
+    rev=$(($num % 10 + $rev * 10))
+    a=$(( $a / 10 ))
+    done 
+    echo $rev
+
+    ------------------------------cA-----------------------
+    heading 14, text size 12 ROMAN TIMES NEW
+    chapter 1. Introduction
+    Objective 
+    System description (include figures and explain)
+
+    man ls --ls manual
+
+<!-- 
+### <li>🟢 D26
+### <li>🟢 D27
+### <li>🟢 D28
+### <li>🟢 D29
 -->
