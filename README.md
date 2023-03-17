@@ -1102,42 +1102,42 @@
 
 ### <li> D26
 
---------------------create man page of sigint-----------
+    --------------------create man page of sigint-----------
 
-https://pastebin.com/q4FGD7R7
-
-
--------TASK BLACK FRIDAY--------
-1. RCB and CBS demonestrate using any ubuntu program
-2. Handling multiple source file using make
-3. DEbugging using GDB
+    https://pastebin.com/q4FGD7R7
 
 
----------------GIT AND GITHUB
-issue solved
-https://itslinuxfoss.com/fix-temporary-failure-resolving-archive-ubuntu-com-error/
-
-sudo apt-get install git
-
-git --version
+    -------TASK BLACK FRIDAY--------
+    1. RCB and CBS demonestrate using any ubuntu program
+    2. Handling multiple source file using make
+    3. DEbugging using GDB
 
 
-----------------uploading file on github----------------------
+    ---------------GIT AND GITHUB
+    issue solved
+    https://itslinuxfoss.com/fix-temporary-failure-resolving-archive-ubuntu-com-error/
 
-git config --global user.name "kalyanMisrhra"
-git config --global user.email "user@gmail.com"
+    sudo apt-get install git
 
-git config --list 
-git clone https://github.com/thekalyan001/TempP
-cd TempP
-touch file.txt
-git add txx.txt
-git status txx.txt
+    git --version
 
-git commit -m "new commit"
-git push origin main
-username:*********
-pss: ********token generated
+
+    ----------------uploading file on github----------------------
+
+    git config --global user.name "kalyanMisrhra"
+    git config --global user.email "user@gmail.com"
+
+    git config --list 
+    git clone https://github.com/thekalyan001/TempP
+    cd TempP
+    touch file.txt
+    git add txx.txt
+    git status txx.txt
+
+    git commit -m "new commit"
+    git push origin main
+    username:*********
+    pss: ********token generated
 
 <!-- 
 ### <li>🟢 D27
