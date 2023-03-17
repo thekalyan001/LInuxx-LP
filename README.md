@@ -1121,7 +1121,6 @@
 
     git --version
 
-
     ----------------uploading file on github----------------------
 
     git config --global user.name "kalyanMisrhra"
@@ -1138,7 +1137,6 @@
     git push origin main
     username:*********
     pss: ********token generated
-
 <!-- 
 ### <li>🟢 D27
 ### <li>🟢 D28
