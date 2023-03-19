@@ -1139,7 +1139,34 @@ git push origin main
 username:*********
 pss: ********token generated
 
+### <li>🟢 D27
 
+---------adding changes to any file and push to server-------------------
+
+touch file.txt  (make change)
+git add txx.txt
+git status txx.txt
+
+git commit -m "new commit"
+git push origin main
+username:thekalyan001
+pss: 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
+
+
+--------changing on server file making changes in lcoal (github)------------------------------
+open any file on github->edit the content of file =>commit change
+
+git pull origin main
+
+
+-------------------backtrack the commited changes-------------
+touch temp
+git add temp
+git status temp
+git reset temp
+
+
+----remove pushed file from server--------
 
 <!-- 
 ### <li>🟢 D28
