@@ -1,3 +1,7 @@
+-see children if you will talk for 5 min you will have to teach here for 25 minutes.
+
+See children what you will do you will do nothing only i do everthing.
+
 # Linuxx-LP
 <hr>
 ---check current directory
@@ -34,6 +38,19 @@ echo "$PWD"
     - expr 12 - 10
     * expr 10 \* 10
     / expr 100 / 10
+
+
+     cat - cat command allows us to create files, view contain of file, concatenate files and redirect output in terminal or files.
+    cat myfile             (read content of myfile)
+    cat myfile1 myfile2     (read content of myfile1 and myfile2)   
+    cat –n myfile1 myfile2      (display content with line number)
+    cat >myfile         (create new file named myfile and write into it)
+
+    Grep command--(search for parcitular word in string)
+    grep -o "class" rt.txt
+
+
+
 
 ### <li>🟢 D2
  
@@ -1286,7 +1303,51 @@ echo "$PWD"
 
 
 
-    --------------
+    --------------DEBUGGING------------
+    commands->
+    breakpoint b
+    list       l
+    frame      f
+    next       n
+    step       s
+    backtrace  b
+    print      p
+    info       i
+    watch b
+
+
+
+    create ->swap.cpp
+
+    #incldue<iostream>
+    using namespace std;
+    void swap(int x, int y){
+        int t=x;
+        x=y;
+        y=t;
+    }
+    int main(){
+        int a=10, b=5;
+        swap(a,b);
+        cout<<a<<" "<<b<<endl;
+        return 0;
+    }
+
+    
+    g++ -g swap.cpp -o swap
+    gdb swap
+
+    b main  //1st breakpoint on main
+    b swap  //2nd breakpoint on swap
+
+    start
+    watch a
+    watch b
+    l  (to print the program)
+    n  (next line)
+
+
+
 <!-- 
 ### <li>🟢 D29
 -->
