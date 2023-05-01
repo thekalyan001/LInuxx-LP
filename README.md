@@ -1,6 +1,6 @@
--if you will talk for 5 min you will have to give here presentation for 25 minutes & i will laugh from there.
+## 😉if you will talk for 5 min you will have to give here presentation for 25 minutes & i will laugh from there.
 
--See children what you will do you will do nothing only i do everthing.
+## See children what you will do you will do nothing only i do everthing & you only listen.
 
 # Linuxx-LP
 <hr>
