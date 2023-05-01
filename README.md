@@ -1254,7 +1254,7 @@ echo "$PWD"
 
 
     -----check if file exists
-    if [[ -f "ab.sh" ]] ;
+    if [[ -f "/home/kalyan/ab.sh" ]] ;
     then
      echo "File exist"
     else
@@ -1262,9 +1262,31 @@ echo "$PWD"
     fi
 
     --check if folder exists
-    if [[ -d "abc" ]]
+    if [[ -d "/home/kalyan/abc" ]]
 
 
+    -----Chekc if file is regular file or dir
+    #!/bin/bash
+    FILE=$1
+    if [ -f $FILE ]
+      then
+        echo "It is reguler File"
+        exit 0
+    elif [ -d $FILE ]
+       then
+         echo "It is directory"
+         exit 1
+     else
+        echo "Another type"
+        exit 2
+    fi
+
+    bash filename.sh  /home/kalyan/ab.cpp  ->It is reguler File”
+    bash filename.sh  /home/kalyan/Desktop ->It is directory
+
+
+
+    --------------
 <!-- 
 ### <li>🟢 D29
 -->
