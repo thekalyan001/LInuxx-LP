@@ -2,6 +2,7 @@
 
 ## See children what you will do you will do nothing only i do everthing & you only listen.
 
+---Dialogue- Nahida ma'am-----
 # Linuxx-LP
 <hr>
 ---check current directory
