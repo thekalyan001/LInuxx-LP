@@ -1170,7 +1170,71 @@ git status temp
 git reset temp
 
 
+----remove pushed file from server--------
 
+
+--------------BRANCHING-----------
+-check current branch name0
+git branch  
+(* denotes which branch youre curently in)
+
+----'create branch'
+git branch Brnach_name
+
+----'switch to another branch'
+git checkout Branch name
+
+---'push branch to remote repository'
+git push origin new_branch1
+
+
+---'delete branch'
+git push origin --delete new_branch1
+
+---------------------TAGS----------------------------------
+
+-----------add tag-------------------
+git clone ......xyz
+cd xyz
+git pull  //bring all changes from remote to local
+git tag
+git tag -a v1.5 -m "my tag"
+git push origin v1.5 
+
+------------------
+sudo apt-get install gdb
+
+nano swap.cpp
+write program---
+g++ -g swap.cpp -o swap
+./swap ya ./a.out
+
+
+
+g++ -g swap.cpp -o swap
+b main
+b swap
+start
+
+f
+n- new line
+bt- back trace previous block me go
+
+---------------------------------------------
+-------------gcc progeram
+nano add.cpp
+
+#incldue<iostream>
+using namespace std;
+int main(){
+  int a=10;
+  cout<<"a is: "<<a<<endl;
+	return 0;
+}
+
+g++ add.cpp
+g++ -g add.cpp -o addOutput
+./a.out  or ./addOutput
 
 <!-- 
 ### <li>🟢 D28
