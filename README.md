@@ -1100,7 +1100,7 @@
 
     man ls --ls manual
 
-### <li> D26
+### <li>🟢 D26
 
     --------------------create man page of sigint-----------
 
@@ -1133,110 +1133,107 @@
     git add txx.txt
     git status txx.txt
 
-<<<<<<< HEAD
-||||||| 3f5fedd
-<!-- 
-=======
-    git commit -m "new commit"
-    git push origin main
-    username:*********
-    pss: ********token generated
-<!-- 
->>>>>>> 15623669334680a4746c226dc295da7255ac91ef
+	<!-- 
+	=======
+	    git commit -m "new commit"
+	    git push origin main
+	    username:*********
+	    pss: ********token generated
+	<!-- 
 ### <li>🟢 D27
 
----------adding changes to any file and push to server-------------------
+	---------adding changes to any file and push to server-------------------
 
-touch file.txt  (make change)
-git add txx.txt
-git status txx.txt
+	touch file.txt  (make change)
+	git add txx.txt
+	git status txx.txt
 
-git commit -m "new commit"
-git push origin main
-username:thekalyan001
-pss: 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
-
-
---------changing on server file making changes in lcoal (github)------------------------------
-open any file on github->edit the content of file =>commit change
-
-git pull origin main
+	git commit -m "new commit"
+	git push origin main
+	username:thekalyan001
+	pss:"TOKEN GENERATED"
 
 
--------------------backtrack the commited changes-------------
-touch temp
-git add temp
-git status temp
-git reset temp
+	--------changing on server file making changes in lcoal (github)------------------------------
+	open any file on github->edit the content of file =>commit change
+
+	git pull origin main
 
 
-----remove pushed file from server--------
+	-------------------backtrack the commited changes-------------
+	touch temp
+	git add temp
+	git status temp
+	git reset temp
 
 
---------------BRANCHING-----------
--check current branch name0
-git branch  
-(* denotes which branch youre curently in)
-
-----'create branch'
-git branch Brnach_name
-
-----'switch to another branch'
-git checkout Branch name
-
----'push branch to remote repository'
-git push origin new_branch1
+	----remove pushed file from server--------
 
 
----'delete branch'
-git push origin --delete new_branch1
+	--------------BRANCHING-----------
+	-check current branch name0
+	git branch  
+	(* denotes which branch youre curently in)
 
----------------------TAGS----------------------------------
+	----'create branch'
+	git branch Brnach_name
 
------------add tag-------------------
-git clone ......xyz
-cd xyz
-git pull  //bring all changes from remote to local
-git tag
-git tag -a v1.5 -m "my tag"
-git push origin v1.5 
+	----'switch to another branch'
+	git checkout Branch name
 
-------------------
-sudo apt-get install gdb
-
-nano swap.cpp
-write program---
-g++ -g swap.cpp -o swap
-./swap ya ./a.out
+	---'push branch to remote repository'
+	git push origin new_branch1
 
 
+	---'delete branch'
+	git push origin --delete new_branch1
 
-g++ -g swap.cpp -o swap
-b main
-b swap
-start
+### <li>🟢 D28
+	---------------------TAGS----------------------------------
 
-f
-n- new line
-bt- back trace previous block me go
+	-----------add tag-------------------
+	git clone ......xyz
+	cd xyz
+	git pull  //bring all changes from remote to local
+	git tag
+	git tag -a v1.5 -m "my tag"
+	git push origin v1.5 
 
----------------------------------------------
--------------gcc progeram
-nano add.cpp
+	------------------
+	sudo apt-get install gdb
 
-#incldue<iostream>
-using namespace std;
-int main(){
-  int a=10;
-  cout<<"a is: "<<a<<endl;
-	return 0;
-}
+	nano swap.cpp
+	write program---
+	g++ -g swap.cpp -o swap
+	./swap ya ./a.out
 
-g++ add.cpp
-g++ -g add.cpp -o addOutput
-./a.out  or ./addOutput
+
+
+	g++ -g swap.cpp -o swap
+	b main
+	b swap
+	start
+
+	f
+	n- new line
+	bt- back trace previous block me go
+
+	---------------------------------------------
+	-------------gcc progeram
+	nano add.cpp
+
+	#incldue<iostream>
+	using namespace std;
+	int main(){
+	  int a=10;
+	  cout<<"a is: "<<a<<endl;
+		return 0;
+	}
+
+	g++ add.cpp
+	g++ -g add.cpp -o addOutput
+	./a.out  or ./addOutput
 
 <!-- 
-### <li>🟢 D28
 ### <li>🟢 D29
 -->
