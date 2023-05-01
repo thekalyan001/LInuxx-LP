@@ -1347,6 +1347,25 @@ echo "$PWD"
     n  (next line)
 
 
+### <li>🟢 D30
+    ---------MANPAGE-----------------------
+    nano manpage
+
+
+    .TH nano "02 may 2023" "kalyan man page"
+    .SH "This is man page"
+    nano  //this is use to create file
+    .SH SYNOPSIS
+    nano DESCRIPTION
+    nano is used to create file of any type
+    .SH SEE ALSO
+    cat command is also similar to nano
+    .BR BUGS
+    No known bugs
+    .SH AUTHOR
+    Kalyan (kalyanmishra60@gmail.com)
+
+
 
 <!-- 
 ### <li>🟢 D29
