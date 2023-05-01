@@ -1219,7 +1219,9 @@
 	bt- back trace previous block me go
 
 	---------------------------------------------
-	-------------gcc progeram
+	
+### <li>🟢 D29
+        -------------gcc progeram
 	nano add.cpp
 
 	#incldue<iostream>
