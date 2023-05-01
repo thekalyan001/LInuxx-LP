@@ -14,6 +14,17 @@
     history 8  =>check previous 8 executed command
     history -c =>clear history
 
+    //new line
+    echo -e "you are \n good"
+    output->you are
+	    good
+	
+    //wait for input
+    echo -e "enter age \n"
+    read age
+   
+
+
     perform arthematic oprtation using expr and bc command-
     + expr 10 + 12
     - expr 12 - 10
