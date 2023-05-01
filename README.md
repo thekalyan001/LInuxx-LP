@@ -312,7 +312,7 @@
     #! /bin/bash
     a=$1
     b=$2
-    mul=$(($a * $b))
+    mul=$(($a * $b))  //OR mul=$((a*b))
     echo $mul
 
     or 
