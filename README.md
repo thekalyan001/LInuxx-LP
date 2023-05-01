@@ -1,5 +1,9 @@
 # Linuxx-LP
 <hr>
+---check current directory
+
+echo "$PWD"
+/home/kalyan
 
 ### <li>🟢 D1
     cal- calender
@@ -1246,6 +1250,20 @@
 	g++ add.cpp
 	g++ -g add.cpp -o addOutput
 	./a.out  or ./addOutput
+
+
+
+    -----check if file exists
+    if [[ -f "ab.sh" ]] ;
+    then
+     echo "File exist"
+    else
+     echo "File doesn't exist"
+    fi
+
+    --check if folder exists
+    if [[ -d "abc" ]]
+
 
 <!-- 
 ### <li>🟢 D29
