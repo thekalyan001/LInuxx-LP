@@ -1121,7 +1121,7 @@ echo "$PWD"
     while [ $num -gt 0 ]
     do 
     rev=$(($num % 10 + $rev * 10))
-    a=$(( $a / 10 ))
+    num=$(( $num / 10 ))
     done 
     echo $rev
 
