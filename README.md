@@ -5,12 +5,16 @@
 ---Dialogue- Nahida ma'am-----
 # Linuxx-LP
 <hr>
----check current directory
+---check current directory path
 
 echo "$PWD"
 /home/kalyan
 
+realpath filename
+/home/kalyan/tempFolder
+
 ### <li>🟢 D1
+
     cal- calender
     cal 2023- 2023 calener
     echo- for ptinting
@@ -756,7 +760,7 @@ echo "$PWD"
     on successful execution of program trap priority wala happen
 
     ---------------------------------
-     touch-create
+     touch ab.txt-create
      pwd-where located
      ls ab.txt  =>check if file exist
 
@@ -1396,10 +1400,13 @@ echo "$PWD"
 ### <li>🟢 D29
 -->
 
-rename file ab to filename-> mv ab.sh filename.sh  
+rename file/folder ab to filename-> mv ab.sh filename.sh  
 move file to folder LPU-> mv addd.cpp ~/LPU
 
 CAT---
+
+check if file exists-> ls file.cpp
+
 show file content=> cat ab.cpp
 
 append content using cat=> cat > a.cpp  
@@ -1425,4 +1432,10 @@ cat > aa.cpp <<EOF
 
 Terminate..
 
+
+
+---
+copy chosen files to another folder named backup
+cp main.c demo.h lib.c backup
 ------------------------------------------------
+
