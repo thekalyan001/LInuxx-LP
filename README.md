@@ -1210,11 +1210,8 @@ realpath filename
 	git reset temp
 
 
-	----remove pushed file from server--------
-
-
 	--------------BRANCHING-----------
-	-check current branch name0
+	---check current branch name
 	git branch  
 	(* denotes which branch youre curently in)
 
@@ -1252,19 +1249,53 @@ realpath filename
 
 
 
-	g++ -g swap.cpp -o swap
-	b main
-	b swap
-	start
+	--------------DEBUGGING------------
+    commands->
+    breakpoint b
+    list       l
+    frame      f
+    next       n
+    step       s
+    backtrace  b
+    print      p
+    info       i
+    watch b
 
-	f
-	n- new line
-	bt- back trace previous block me go
 
+
+    create ->swap.cpp
+
+    #incldue<iostream>
+    using namespace std;
+    void swap(int x, int y){
+        int t=x;
+        x=y;
+        y=t;
+    }
+    int main(){
+        int a=10, b=5;
+        swap(a,b);
+        cout<<a<<" "<<b<<endl;
+        return 0;
+    }
+
+    
+    g++ -g swap.cpp -o swap
+    gdb swap
+
+    b main  //1st breakpoint on main
+    b swap  //2nd breakpoint on swap
+
+    start
+    watch a
+    watch b
+    l  (to print the program)
+    n  (next line)
+    s
 	---------------------------------------------
 	
 ### <li>🟢 D29
-        -------------gcc progeram
+    -------------gcc program
 	nano add.cpp
 
 	#incldue<iostream>
@@ -1312,50 +1343,6 @@ realpath filename
     bash filename.sh  /home/kalyan/ab.cpp  ->It is reguler File”
     bash filename.sh  /home/kalyan/Desktop ->It is directory
 
-
-
-    --------------DEBUGGING------------
-    commands->
-    breakpoint b
-    list       l
-    frame      f
-    next       n
-    step       s
-    backtrace  b
-    print      p
-    info       i
-    watch b
-
-
-
-    create ->swap.cpp
-
-    #incldue<iostream>
-    using namespace std;
-    void swap(int x, int y){
-        int t=x;
-        x=y;
-        y=t;
-    }
-    int main(){
-        int a=10, b=5;
-        swap(a,b);
-        cout<<a<<" "<<b<<endl;
-        return 0;
-    }
-
-    
-    g++ -g swap.cpp -o swap
-    gdb swap
-
-    b main  //1st breakpoint on main
-    b swap  //2nd breakpoint on swap
-
-    start
-    watch a
-    watch b
-    l  (to print the program)
-    n  (next line)
 
 
 ### <li>🟢 D30
@@ -1425,42 +1412,49 @@ realpath filename
 ### <li>🟢 D29
 -->
 
-rename file/folder ab to filename-> mv ab.sh filename.sh  
-move file to folder LPU-> mv addd.cpp ~/LPU
+-----SHORT TIPS (File, debug)-----------
 
-CAT---
+    rename file/folder ab to filename-> mv ab.sh filename.sh  
+    move file to folder LPU-> mv addd.cpp ~/LPU
 
-check if file exists-> ls file.cpp
+    CAT---
 
-show file content=> cat ab.cpp
+    check if file exists-> ls file.cpp
 
-append content using cat=> cat > a.cpp  
-This is fjsfd
-fdsnfnsdf
-sdfjsdf
+    show file content=> cat ab.cpp
 
-CTRL+D
+    append content using cat=> cat > a.cpp  
+    This is fjsfd
+    fdsnfnsdf
+    sdfjsdf
 
-
-copy content from file A to B=> cat A > B
-append content of multiple file to end of file of B=> cat AA.cpp ABC.cpp >> B
-
-show content in reverse order=> tac ab.sh
-
-display all .cpp file content=>  *.cpp
+    CTRL+D
 
 
-----write untill given word match (here EOF is the word)
-cat > aa.cpp <<EOF
->This is conetnet
->EOF
+    copy content from file A to B=> cat A > B
+    append content of multiple file to end of file of B=> cat AA.cpp ABC.cpp >> B
 
-Terminate..
+    show content in reverse order=> tac ab.sh
+
+    display all .cpp file content=>  *.cpp
 
 
+    ----write untill given word match (here EOF is the word)
+    cat > aa.cpp <<EOF
+    >This is conetnet
+    >EOF
 
----
-copy chosen files to another folder named backup
-cp main.c demo.h lib.c backup
+    Terminate..
+
+
+    copy chosen files to another folder named backup
+    cp main.c demo.h lib.c backup
+
+
+    --DEBUG--
+
+    for debug-> bash -v abb.sh
+    bash -n abb.sh  =>it will show all the symentic errors
+    bash -u filename.sh =>it will show logical errors
 ------------------------------------------------
 
