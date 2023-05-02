@@ -1397,3 +1397,32 @@ echo "$PWD"
 -->
 
 rename file ab to filename-> mv ab.sh filename.sh  
+move file to folder LPU-> mv addd.cpp ~/LPU
+
+CAT---
+show file content=> cat ab.cpp
+
+append content using cat=> cat > a.cpp  
+This is fjsfd
+fdsnfnsdf
+sdfjsdf
+
+CTRL+D
+
+
+copy content from file A to B=> cat A > B
+append content of multiple file to end of file of B=> cat AA.cpp ABC.cpp >> B
+
+show content in reverse order=> tac ab.sh
+
+display all .cpp file content=>  *.cpp
+
+
+----write untill given word match (here EOF is the word)
+cat > aa.cpp <<EOF
+>This is conetnet
+>EOF
+
+Terminate..
+
+------------------------------------------------
