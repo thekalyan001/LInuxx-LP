@@ -1382,12 +1382,18 @@ echo "$PWD"
         then 
          echo 1
         else
-         echo $((n*$(f $n-1)))
+         echo $((n*$(fc $n-1)))
         fi
     }
     for i in {1..10}; do
-    echo "$i!= $(f $i)"
+    echo "$i!= $(fc $i)"
     done
+
+
+
+    Q.
 <!-- 
 ### <li>🟢 D29
 -->
+
+rename file ab to filename-> mv ab.sh filename.sh  
