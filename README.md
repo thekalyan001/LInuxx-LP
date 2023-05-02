@@ -1366,8 +1366,28 @@ echo "$PWD"
     .SH AUTHOR
     Kalyan (kalyanmishra60@gmail.com)
 
+    #run man page
+    man ./manpage
 
 
+
+
+### <li>🟢 D31 SOME SHELL
+    Q. Factorial of num
+
+    #! /bin/bash
+    function fc(){
+        local n=$1
+        if (( $n ==0 ))
+        then 
+         echo 1
+        else
+         echo $((n*$(f $n-1)))
+        fi
+    }
+    for i in {1..10}; do
+    echo "$i!= $(f $i)"
+    done
 <!-- 
 ### <li>🟢 D29
 -->
