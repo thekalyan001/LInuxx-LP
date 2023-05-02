@@ -1056,6 +1056,12 @@ realpath filename
 
     Q. WAP to reverse the string "we are working very hard"
 
+    #! /bin/bash
+    var="This is"
+    rev=$(rev<<<"${var}")
+    echo "$var  $rev"
+
+
     Q. WAP to generate table of 20 and stop the process at 20 * 3
     #!/bin/bash
     a=20
@@ -1395,7 +1401,26 @@ realpath filename
 
 
 
-    Q.
+    Q. Reverse a string
+    #! /bin/bash
+    var="This is"
+    rev=$(rev<<<"${var}")
+    echo "$var  $rev"
+
+
+    Q. Frequency of word in file
+    >>  cat > ab.sh
+        ->this is this is this is this
+
+    >>  grep "this" ab.sh
+        op->this will highlight all "this"
+
+    >>  grep -c "this" ab.sh
+        4
+    >>  grep -l "this" *
+       op->search file which has this word
+
+    
 <!-- 
 ### <li>🟢 D29
 -->
