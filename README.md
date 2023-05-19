@@ -17,6 +17,11 @@ realpath filename
 
 ### <li>🟢 D1
 
+    cd ..  //come back to previous directory
+    cd d:  cd from c to d
+    remove file containg name as given string (string="German" or string="POrtuguese")
+    syntex-> rm *text*
+    eg-> rm *German* *Portuguese*
     cal- calender
     cal 2023- 2023 calener
     echo- for ptinting
