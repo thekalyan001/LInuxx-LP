@@ -1235,6 +1235,9 @@ realpath filename
 	---'delete branch'
 	git push origin --delete new_branch1
 
+ 	--Push from one branch to other (here TestBranch is other branch name)
+  	git push origin main:TestBranch
+
 ### <li>🟢 D28
 	---------------------TAGS----------------------------------
 
