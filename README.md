@@ -4,10 +4,10 @@
 
 ## See children what you will do you will do nothing only i do everthing & you only listen.
 
----Dialogue- Nahida ma'am-----
+> Dialogue- Nahida ma'am
 # Linuxx-LP
 <hr>
----check current directory path
+> check current directory path
 
 echo "$PWD"
 /home/kalyan
