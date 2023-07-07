@@ -1419,7 +1419,7 @@ realpath filename
 ### <li>🟢 D29
 -->
 
------SHORT TIPS (File, debug)-----------
+> SHORT TIPS (File, debug)
 
     rename file/folder ab to filename-> mv ab.sh filename.sh  
     move file to folder LPU-> mv addd.cpp ~/LPU
